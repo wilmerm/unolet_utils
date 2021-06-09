@@ -1,0 +1,1449 @@
+/* 
+Copyright (C) 2020 Unolet All rights reserved.
+Copyright (C) 2020 Wilmer Martinez <wilmermorelmartinez@gmail.com>
+ 
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+ 
+1.  Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+2.  Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+3.  Neither the name of Unoletsoft, Unolet SRL ("Unolet") nor the names of
+    its contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY UNOLET AND ITS CONTRIBUTORS "AS IS" AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL UNOLET OR ITS CONTRIBUTORS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+*/
+
+
+/*
+ Utilizamos Bootstrap para todo el diseño CSS del Sistema.
+
+ En este archivo de estilos sobrescribimos algunas clases
+ Bootstrap para adaptarlas al diseño del Sistema.
+*/
+
+
+
+
+@font-face {
+    font-family: 'Courier New', Courier, monospace;
+    src: url(/static/fonts/cour.ttf);
+}
+
+@font-face {
+    font-family: 'Courier New', Courier, monospace;
+    src: url(/static/fonts/courbd.ttf);
+    font-weight: bold;
+}
+
+
+
+
+:root {
+    --unolet-white: #ffffff;
+    --unolet-black: #343a40;
+    --unolet-gray: #757575;
+    --unolet-red: #dc3545;
+    --light2: #eeeff0;
+    --blue: #0d6efd;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #d63384;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #198754;
+    --teal: #20c997;
+    --cyan: #0dcaf0;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #0d6efd;
+    --secondary: #6c757d;
+    --success: #198754;
+    --info: #0dcaf0;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(253, 255, 245);
+}
+
+#main {
+    padding-top: 70px;
+    background-color: none;
+}
+
+#main 
+#content-left, 
+#main #content-center, 
+#main #content-right {
+    /*padding-top: 70px;*/
+}
+
+#content1 {
+}
+
+
+.text-primary {
+    /*color: #1c2236 !important;*/
+}
+
+.text-shadow {
+    text-shadow: 2px 2px #50505063;
+}
+
+
+fieldset {
+    border: 1px groove #aaa;
+    background: #eee;
+    padding: 5px;
+}
+
+.semi-circulo-2 {
+    -moz-border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    border-radius: 0 100px 100px 0;
+}
+
+
+/*
+Botones con imágenes.
+*/
+
+.btn img {
+    width: auto;
+    height: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.btn-lg img {
+    width: auto;
+    height: 30px;
+}
+
+.btn-white {
+    background-color: var(--white);
+    color: var(--dark);
+}
+.btn-white:hover {
+    background-color: #eee;
+}
+
+.btn-primary svg {
+    fill: var(--bs-white);
+}
+
+.btn-secondary svg {
+    fill: var(--bs-white);
+}
+
+.btn-info svg {
+    fill: var(--bs-white);
+}
+
+.btn-danger svg {
+    fill: var(--bs-white);
+}
+
+.btn-warning svg {
+    fill: var(--bs-dark);
+}
+
+.btn-success svg {
+    fill: var(--bs-white);
+}
+
+.btn-dark svg {
+    fill: var(--bs-white);
+}
+
+.btn-light svg {
+    fill: var(--bs-dark);
+}
+
+
+
+.btn-outline-primary svg {
+    fill: var(--bs-primary);
+}
+
+.btn-outline-secondary svg {
+    fill: var(--bs-secondary);
+}
+
+.btn-outline-info svg {
+    fill: var(--bs-info);
+}
+
+.btn-outline-danger svg {
+    fill: var(--bs-danger);
+}
+
+.btn-outline-warning svg {
+    fill: var(--bs-warning);
+}
+
+.btn-outline-success svg {
+    fill: var(--bs-success);
+}
+
+.btn-outline-dark svg {
+    fill: var(--bs-dark);
+}
+
+.btn-outline-light svg {
+    fill: var(--bs-light);
+}
+
+
+.btn-outline-primary:hover svg {
+    fill: var(--bs-white);
+}
+
+.btn-outline-secondary:hover svg {
+    fill: var(--bs-white);
+}
+
+.btn-outline-info:hover svg {
+    fill: var(--bs-dark);
+}
+
+.btn-outline-danger:hover svg {
+    fill: var(--bs-white);
+}
+
+.btn-outline-warning:hover svg {
+    fill: var(--bs-dark);
+}
+
+.btn-outline-success:hover svg {
+    fill: var(--bs-white);
+}
+
+.btn-outline-dark:hover svg {
+    fill: var(--bs-white);
+}
+
+.btn-outline-light:hover svg {
+    fill: var(--bs-dark);
+}
+
+
+
+/*
+Tablas.
+*/
+
+.table td img {
+    height: 30px;
+    width: 30px;
+}
+.table {
+    background-color: white;
+}
+
+.table-hover tbody tr {
+    cursor: pointer;
+}
+/* Requerido por la librería table-hover.js */
+.table-hover tbody tr:focus {
+    background-color: #75757580;
+    color: black;
+    outline: none;
+    /*text-shadow: 0.5px 0.5px #00000077;*/
+}
+
+.table thead th .btn-link {
+    color: #454545;
+}
+
+.table a {
+    text-decoration: none;
+}
+
+
+
+/*
+* Pagination.
+*/
+
+
+
+
+/*
+    Tamaños
+*/
+.w-5 {
+    width: 5% !important;
+}
+
+.w-10 {
+    width: 10% !important;
+}
+
+.w-15 {
+    width: 15% !important;
+}
+
+.w-20 {
+    width: 20% !important;
+}
+
+.w-25 {
+    width: 25% !important;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+
+.w-35 {
+    width: 35% !important;
+}
+
+.w-40 {
+    width: 40% !important;
+}
+
+.w-45 {
+    width: 45% !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.w-55 {
+    width: 55% !important;
+}
+
+.w-60 {
+    width: 60% !important;
+}
+
+.w-65 {
+    width: 65% !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.w-75 {
+    width: 75% !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.w-85 {
+    width: 85% !important;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.w-95 {
+    width: 95% !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+
+.w-1px {
+    width: 1px !important;
+}
+
+.w-2px {
+    width: 2px !important;
+}
+
+.w-4px {
+    width: 4px !important;
+}
+
+.w-8px {
+    width: 8px !important;
+}
+
+.w-16px {
+    width: 16px !important;
+}
+
+.w-24px {
+    width: 24px !important;
+}
+
+.w-32px {
+    width: 32px !important;
+}
+
+.w-48px {
+    width: 48px !important;
+}
+
+.w-64px {
+    width: 64px !important;
+}
+
+.w-96px {
+    width: 96px !important;
+}
+
+.w-112px {
+    width: 112px !important;
+}
+
+.w-128px {
+    width: 128px !important;
+}
+
+.w-256px {
+    width: 256px !important;
+}
+
+.w-320px {
+    width: 320px !important;
+}
+
+.w-384px {
+    width: 384px !important;
+}
+
+.w-448px {
+    width: 448px !important;
+}
+
+.w-512px {
+    width: 512px !important;
+}
+.w-640px {
+    width: 640px !important;
+}
+
+.w-768px {
+    width: 768px !important;
+}
+
+.w-1024px {
+    width: 124px !important;
+}
+
+
+.h-5 {
+    height: 5% !important;
+}
+
+.h-10 {
+    height: 10% !important;
+}
+
+.h-15 {
+    height: 15% !important;
+}
+
+.h-20 {
+    height: 20% !important;
+}
+
+.h-25 {
+    height: 25% !important;
+}
+
+.h-30 {
+    height: 30% !important;
+}
+
+.h-35 {
+    height: 35% !important;
+}
+
+.h-40 {
+    height: 40% !important;
+}
+
+.h-45 {
+    height: 45% !important;
+}
+
+.h-50 {
+    height: 50% !important;
+}
+
+.h-55 {
+    height: 55% !important;
+}
+
+.h-60 {
+    height: 60% !important;
+}
+
+.h-65 {
+    height: 65% !important;
+}
+
+.h-70 {
+    height: 70% !important;
+}
+
+.h-75 {
+    height: 75% !important;
+}
+
+.h-80 {
+    height: 80% !important;
+}
+
+.h-85 {
+    height: 85% !important;
+}
+
+.h-90 {
+    height: 90% !important;
+}
+
+.h-95 {
+    height: 95% !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+
+.h-1px {
+    height: 1px !important;
+}
+
+.h-2px {
+    height: 2px !important;
+}
+
+.h-4px {
+    height: 4px !important;
+}
+
+.h-8px {
+    height: 8px !important;
+}
+
+.h-16px {
+    height: 16px !important;
+}
+
+.h-24px {
+    height: 24px !important;
+}
+
+.h-32px {
+    height: 32px !important;
+}
+
+.h-48px {
+    height: 48px !important;
+}
+
+.h-64px {
+    height: 64px !important;
+}
+
+.h-80px {
+    height: 80px !important;
+}
+
+.h-96px {
+    height: 96px !important;
+}
+
+.h-112px {
+    height: 112px !important;
+}
+
+.h-128px {
+    height: 128px !important;
+}
+
+.h-192px {
+    height: 192px !important;
+}
+
+.h-256px {
+    height: 256px !important;
+}
+
+.h-320px {
+    height: 320px !important;
+}
+
+.h-384px {
+    height: 384px !important;
+}
+
+.h-448px {
+    height: 448px !important;
+}
+
+.h-512px {
+    height: 512px !important;
+}
+
+.h-640px {
+    height: 640px !important;
+}
+
+.h-768px {
+    height: 768px !important;
+}
+
+.h-1024px {
+    height: 1024px !important;
+}
+
+
+@media (min-width: 576px) {
+    .w-md-10 {
+        width: 10% !important;
+    }
+    
+    .w-md-20 {
+        width: 20% !important;
+    }
+    
+    
+    .w-md-1px {
+        width: 1px  !important;
+    }
+    
+    .w-md-2px {
+        width: 2px !important;
+    }
+    
+    .w-md-4px {
+        width: 4px !important;
+    }
+    
+    .w-md-8px {
+        width: 8px !important;
+    }
+    
+    .w-md-16px {
+        width: 16px !important;
+    }
+    
+    .w-md-24px {
+        width: 24px !important;
+    }
+    
+    .w-md-32px {
+        width: 32px !important;
+    }
+    
+    .w-md-48px {
+        width: 48px !important;
+    }
+    
+    .w-md-64px {
+        width: 64px !important;
+    }
+    
+    .w-md-128px {
+        width: 128px !important;
+    }
+    
+    .w-md-256px {
+        width: 256px !important;
+    }
+
+    .w-md-320px {
+        width: 320px !important;
+    }
+
+    .w-md-384px {
+        width: 384px !important;
+    }
+    
+    .w-md-448px {
+        width: 448px !important;
+    }
+
+    .w-md-512px {
+        width: 512px !important;
+    }
+
+    .w-md-640px {
+        width: 640px !important;
+    }
+    
+    .w-md-768px {
+        width: 768px !important;
+    }
+    
+    .w-md-1024px {
+        width: 124px !important;
+    }
+    
+    
+    .h-md-10 {
+        height: 10% !important;
+    }
+    
+    .h-md-20 {
+        height: 20% !important;
+    }
+    
+    .h-md-1px {
+        height: 1px !important;
+    }
+    
+    .h-md-2px {
+        height: 2px !important;
+    }
+    
+    .h-md-4px {
+        height: 4px !important;
+    }
+    
+    .h-md-8px {
+        height: 8px !important;
+    }
+    
+    .h-md-16px {
+        height: 16px !important;
+    }
+    
+    .h-md-24px {
+        height: 24px !important;
+    }
+    
+    .h-md-32px {
+        height: 32px !important;
+    }
+    
+    .h-md-48px {
+        height: 48px !important;
+    }
+    
+    .h-md-64px {
+        height: 64px !important;
+    }
+    
+    .h-md-80px {
+        height: 80px !important;
+    }
+    
+    .h-md-96px {
+        height: 96px !important;
+    }
+    
+    .h-md-112px {
+        height: 112px !important;
+    }
+    
+    .h-md-128px {
+        height: 128px !important;
+    }
+    
+    .h-md-192px {
+        height: 192px !important;
+    }
+    
+    .h-md-256px {
+        height: 256px !important;
+    }
+    
+    .h-md-320px {
+        height: 320px !important;
+    }
+    
+    .h-md-384px {
+        height: 384px !important;
+    }
+    
+    .h-md-448px {
+        height: 448px !important;
+    }
+    
+    .h-md-512px {
+        height: 512px !important;
+    }
+    .h-md-640px {
+        height: 640px !important;
+    }
+    
+    .h-md-768px {
+        height: 768px !important;
+    }
+    
+    .h-md-1024px {
+        height: 1024px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------------------
+ Posiciones.
+------------------------------------------------------------------------------*/
+.z-index-inherit {
+    z-index: inherit;
+}
+
+.z-index-auto {
+    z-index: auto;
+}
+
+.z-index-initial {
+    z-index: initial;
+}
+
+.z-index-unset {
+    z-index: unset;
+}
+
+.z-index-n1000 {
+    z-index: -1000;
+}
+
+.z-index-0 {
+    z-index: 0;
+}
+
+.z-index-500 {
+    z-index: 500;
+}
+
+.z-index-1000 {
+    z-index: 1000;
+}
+
+.z-index-2000 {
+    z-index: 2000;
+}
+
+.z-index-3000 {
+    z-index: 3000;
+}
+
+.z-index-4000 {
+    z-index: 4000;
+}
+
+.z-index-5000 {
+    z-index: 5000;
+}
+
+
+
+/*
+Colores, Opacidad...
+*/
+
+/* Colores de la línea gráfica de Unolet. */
+.unolet-bg-white {
+    background-color: var(--unolet-white); 
+}
+.unolet-bg-gray {
+    background-color: var(--unolet-black);
+}
+.unolet-bg-gray-light {
+    background-color: var(--unolet-gray);
+}
+.unolet-bg-red {
+    background-color: var(--unolet-red);
+}
+.unolt-text-white {
+    color: var(--unolet-white);
+}
+.unolet-text-gray {
+    color: var(--unolet-black);
+}
+.unolet-text-gray-light {
+    color: var(--unolet-gray);
+}
+.unolet-text-red {
+    color: var(--unolet-red);
+}
+.bg-light2 {
+    background-color: var(--light2);
+}
+
+
+.opacity-1 {
+    opacity: 0.1;
+}
+.opacity-2 {
+    opacity: 0.2;
+}
+.opacity-3 {
+    opacity: 0.3;
+}
+.opacity-4 {
+    opacity: 0.4;
+}
+.opacity-5 {
+    opacity: 0.5;
+}
+.opacity-6 {
+    opacity: 0.6;
+}
+.opacity-7 {
+    opacity: 0.7;
+}
+.opacity-8 {
+    opacity: 0.8;
+}
+.opacity-9 {
+    opacity: 0.9;
+}
+.opacity-10 {
+    opacity: 1;
+}
+
+.opacity-1-hover:hover {
+    opacity: 0.1;
+}
+.opacity-2-hover:hover {
+    opacity: 0.2;
+}
+.opacity-3-hover:hover {
+    opacity: 0.3;
+}
+.opacity-4-hover:hover {
+    opacity: 0.4;
+}
+.opacity-5-hover:hover {
+    opacity: 0.5;
+}
+.opacity-6-hover:hover {
+    opacity: 0.6;
+}
+.opacity-7-hover:hover {
+    opacity: 0.7;
+}
+.opacity-8-hover:hover {
+    opacity: 0.8;
+}
+.opacity-9-hover:hover {
+    opacity: 0.9;
+}
+.opacity-10-hover:hover {
+    opacity: 1;
+}
+
+
+
+.blur-0 {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+}
+
+.blur-1px {
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.blur-2px {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.blur-3px {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.blur-4px {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.blur-5px {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.blur-6px {
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+
+.blur-7px {
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+}
+
+.blur-8px {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.blur-9px {
+    filter: blur(9px);
+    -webkit-filter: blur(9px);
+}
+
+.blur-10px {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+
+
+
+/* -----------------------------------------------------------------------------
+ Rotación.
+------------------------------------------------------------------------------*/
+
+.rotate-5 {
+    transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+}
+
+.rotate-10 {
+    transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+}
+
+.rotate-20 {
+    transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+}
+
+.rotate-30 {
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+}
+
+.rotate-40 {
+    transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+}
+
+.rotate-50 {
+    transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+}
+
+.rotate-60 {
+    transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+}
+
+.rotate-70 {
+    transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -webkit-transform: rotate(70deg);
+}
+
+.rotate-80 {
+    transform: rotate(80deg);
+    -moz-transform: rotate(80deg);
+    -webkit-transform: rotate(80deg);
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.rotate-100 {
+    transform: rotate(100deg);
+    -moz-transform: rotate(100deg);
+    -webkit-transform: rotate(100deg);
+}
+
+.rotate-110 {
+    transform: rotate(110deg);
+    -moz-transform: rotate(110deg);
+    -webkit-transform: rotate(110deg);
+}
+
+.rotate-120 {
+    transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+}
+
+.rotate-130 {
+    transform: rotate(130deg);
+    -moz-transform: rotate(130deg);
+    -webkit-transform: rotate(130deg);
+}
+
+.rotate-140 {
+    transform: rotate(140deg);
+    -moz-transform: rotate(140deg);
+    -webkit-transform: rotate(140deg);
+}
+
+.rotate-150 {
+    transform: rotate(150deg);
+    -moz-transform: rotate(150deg);
+    -webkit-transform: rotate(150deg);
+}
+
+.rotate-160 {
+    transform: rotate(160deg);
+    -moz-transform: rotate(160deg);
+    -webkit-transform: rotate(160deg);
+}
+
+.rotate-170 {
+    transform: rotate(170deg);
+    -moz-transform: rotate(170deg);
+    -webkit-transform: rotate(170deg);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+
+/* -----------------------------------------------------------------------------
+ Positions.
+------------------------------------------------------------------------------*/
+.top {
+    top: 0px;
+}
+.bottom {
+    bottom: 0px;
+}
+.left {
+    left: 0px;
+}
+.right {
+    right: 0px;
+}
+
+
+/* -----------------------------------------------------------------------------
+ Misceláneos.
+------------------------------------------------------------------------------*/
+
+.totales {
+    font-weight: bold;
+}
+
+tr.totales td, tr.totales th {
+    background-color: rgba(150, 150, 150, 0.3);
+    color: black;
+    text-align: right;
+}
+
+tfoot.totales td, tfoot.totales th {
+    background-color: rgba(150, 150, 150, 0.3);
+    color: black;
+    text-align: right;
+}
+
+
+
+
+.enfasis {
+    background-color: rgba(255, 187, 0, 0.5) !important;
+    font-weight: bold !important;
+}
+
+tr.enfasis td {
+    background-color: rgba(255, 187, 0, 0.5) !important;
+    font-weight: bold !important;
+}
+
+tr.enfasis th {
+    background-color: rgba(255, 187, 0) !important;
+    font-weight: bold !important;
+}
+
+
+
+
+/***********************************************************
+SOBRESCRITOS DE LIBRERÍAS EXTERNAS.
+***********************************************************/
+
+
+
+/*
+    Bootstrap
+*/
+
+
+body, .btn, .form-control, .form-control-plaintext, .dropdown-menu,
+.input-group-text, .custom-select, .popover-header, .table {
+    /* el tamaño por defecto en Bootstrap es 1rem */
+    font-size: 0.9rem;
+}
+
+
+.nav-item .nav-link {
+    color: #454545;
+}
+
+
+h1, .h1 {
+    font-size: 1.4rem;
+}
+
+h1 img, .h1 img, h1 svg, .h1 svg {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+h2, .h2 {
+    font-size: 1.3rem;
+}
+h2 img, .h2 img, h2 svg, .h2 svg {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+h3, .h3 {
+    font-size: 1.2rem;
+}
+h3 img, .h3 img, h3 svg, .h3 svg {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+h4, .h4 {
+    font-size: 1.1rem;
+}
+h4 img, .h4 img, h4 svg, .h4 svg {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+h5, .h5 {
+    font-size: 1rem;
+}
+h5 img, .h5 img, h5 svg, .h5 svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+h6, .h6 {
+    font-size: 0.9rem;
+}
+h6 img, .h6 img, h6 svg, .h6 svg {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+
+
+/* Clase Bootstrap, la extendemos para que el estilo se aplique también a los hijos. */
+.lead, .lead > p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+
+
+
+.font-size-xsmall {
+    font-size: 9px;
+}
+
+.font-size-small {
+    font-size: 14px;
+}
+
+.font-size-normal {
+    font-size: 16px;
+}
+
+.font-size-large {
+    font-size: 20px;
+}
+
+.font-size-xlarge {
+    font-size: 26px;
+}
+
+
+.table thead th {
+    text-align: center;
+}
+
+
+
+
+
+/*
+    Códigos de la aplicación: django-autocomplete-light
+*/
+
+.select2-container {
+    /* min-width: 20em; *** Original. */
+    min-width: auto !important;
+    width: 100% !important;
+}
+
+.select2-container .select2-selection--single {
+    /*
+    Original:
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    user-select: none;
+    -webkit-user-select: none;
+    */
+    height: 38px !important;
+}
+
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    /*
+    Orignal:
+    height: 28px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+    */
+    height: 100% !important;
+}
+
+
+
+element.style {
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 28px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    /*
+    Original:
+    display: block;
+    padding-left: 8px;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    */
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+
+
+.menu li:hover ul {
+    display: block !important;
+}
+
+
+
+
+
+
+
+
+@media print {
+    @page {
+        size: letter;
+    }
+
+    @media print {
+
+        body, .btn, .form-control, .form-control-plaintext,
+        .dropdown-menu, .input-group-text, .custom-select,
+        .popover-header, table {
+            /* el tamaño por defecto en Bootstrap es 1rem */
+            font-size: 1rem;
+        }
+
+        .no-break {
+            page-break-inside: avoid;
+        }
+
+        .page-break-before {
+            page-break-before: always;
+        }
+
+        body, #main, .btn, .form-control, .form-control-plaintext, .dropdown-menu,
+        .input-group-text, .custom-select, .popover-header, table, .table {
+            font-size: 1.1rem !important; /* el tamaño por defecto en Bootstrap es 1rem */
+            background-color: white !important;
+            color: black;
+        }
+
+        #main {
+            padding-top: 0px;
+        }
+
+        h1, .h1 {
+            font-size: 1.6rem !important;
+        }
+
+        h2, .h2 {
+            font-size: 1.5rem;
+        }
+
+        h3, .h3 {
+            font-size: 1.4rem;
+        }
+
+        h4, .h4 {
+            font-size: 1.3rem;
+        }
+
+        h5, .h5 {
+            font-size: 1.2rem;
+        }
+
+        h6, .h6 {
+            font-size: 1.1rem;
+        }
+    }
+}

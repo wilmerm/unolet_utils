@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+recursive-include unoletutils/libs *
+recursive-include unoletutils/static *
+recursive-include unoletutils/templates *
+recursive-include unoletutils/docs *
