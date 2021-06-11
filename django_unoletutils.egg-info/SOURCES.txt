@@ -1,6 +1,7 @@
 LICENSE
 MANIFEST.in
 README.rst
+setup.cfg
 setup.py
 django_unoletutils.egg-info/PKG-INFO
 django_unoletutils.egg-info/SOURCES.txt
@@ -158,6 +159,8 @@ unoletutils/static/icons/bag-plus.svg
 unoletutils/static/icons/bag-x-fill.svg
 unoletutils/static/icons/bag-x.svg
 unoletutils/static/icons/bag.svg
+unoletutils/static/icons/bank.svg
+unoletutils/static/icons/bank2.svg
 unoletutils/static/icons/bar-chart-fill.svg
 unoletutils/static/icons/bar-chart-line-fill.svg
 unoletutils/static/icons/bar-chart-line.svg
@@ -174,6 +177,8 @@ unoletutils/static/icons/battery-full.svg
 unoletutils/static/icons/battery-half.svg
 unoletutils/static/icons/battery.svg
 unoletutils/static/icons/bell-fill.svg
+unoletutils/static/icons/bell-slash-fill.svg
+unoletutils/static/icons/bell-slash.svg
 unoletutils/static/icons/bell.svg
 unoletutils/static/icons/bezier.svg
 unoletutils/static/icons/bezier2.svg
@@ -365,6 +370,7 @@ unoletutils/static/icons/cart.svg
 unoletutils/static/icons/cart2.svg
 unoletutils/static/icons/cart3.svg
 unoletutils/static/icons/cart4.svg
+unoletutils/static/icons/cash-coin.svg
 unoletutils/static/icons/cash-stack.svg
 unoletutils/static/icons/cash.svg
 unoletutils/static/icons/cast.svg
@@ -403,6 +409,7 @@ unoletutils/static/icons/chat.svg
 unoletutils/static/icons/check-all.svg
 unoletutils/static/icons/check-circle-fill.svg
 unoletutils/static/icons/check-circle.svg
+unoletutils/static/icons/check-lg.svg
 unoletutils/static/icons/check-square-fill.svg
 unoletutils/static/icons/check-square.svg
 unoletutils/static/icons/check.svg
@@ -496,6 +503,7 @@ unoletutils/static/icons/cloudy.svg
 unoletutils/static/icons/code-slash.svg
 unoletutils/static/icons/code-square.svg
 unoletutils/static/icons/code.svg
+unoletutils/static/icons/coin.svg
 unoletutils/static/icons/collection-fill.svg
 unoletutils/static/icons/collection-play-fill.svg
 unoletutils/static/icons/collection-play.svg
@@ -520,12 +528,19 @@ unoletutils/static/icons/crop.svg
 unoletutils/static/icons/cup-fill.svg
 unoletutils/static/icons/cup-straw.svg
 unoletutils/static/icons/cup.svg
+unoletutils/static/icons/currency-bitcoin.svg
+unoletutils/static/icons/currency-dollar.svg
+unoletutils/static/icons/currency-euro.svg
+unoletutils/static/icons/currency-exchange.svg
+unoletutils/static/icons/currency-pound.svg
+unoletutils/static/icons/currency-yen.svg
 unoletutils/static/icons/cursor-fill.svg
 unoletutils/static/icons/cursor-text.svg
 unoletutils/static/icons/cursor.svg
 unoletutils/static/icons/dash-circle-dotted.svg
 unoletutils/static/icons/dash-circle-fill.svg
 unoletutils/static/icons/dash-circle.svg
+unoletutils/static/icons/dash-lg.svg
 unoletutils/static/icons/dash-square-dotted.svg
 unoletutils/static/icons/dash-square-fill.svg
 unoletutils/static/icons/dash-square.svg
@@ -605,6 +620,7 @@ unoletutils/static/icons/exclamation-circle-fill.svg
 unoletutils/static/icons/exclamation-circle.svg
 unoletutils/static/icons/exclamation-diamond-fill.svg
 unoletutils/static/icons/exclamation-diamond.svg
+unoletutils/static/icons/exclamation-lg.svg
 unoletutils/static/icons/exclamation-octagon-fill.svg
 unoletutils/static/icons/exclamation-octagon.svg
 unoletutils/static/icons/exclamation-square-fill.svg
@@ -671,6 +687,8 @@ unoletutils/static/icons/file-earmark-minus-fill.svg
 unoletutils/static/icons/file-earmark-minus.svg
 unoletutils/static/icons/file-earmark-music-fill.svg
 unoletutils/static/icons/file-earmark-music.svg
+unoletutils/static/icons/file-earmark-pdf-fill.svg
+unoletutils/static/icons/file-earmark-pdf.svg
 unoletutils/static/icons/file-earmark-person-fill.svg
 unoletutils/static/icons/file-earmark-person.svg
 unoletutils/static/icons/file-earmark-play-fill.svg
@@ -717,6 +735,8 @@ unoletutils/static/icons/file-minus-fill.svg
 unoletutils/static/icons/file-minus.svg
 unoletutils/static/icons/file-music-fill.svg
 unoletutils/static/icons/file-music.svg
+unoletutils/static/icons/file-pdf-fill.svg
+unoletutils/static/icons/file-pdf.svg
 unoletutils/static/icons/file-person-fill.svg
 unoletutils/static/icons/file-person.svg
 unoletutils/static/icons/file-play-fill.svg
@@ -782,6 +802,10 @@ unoletutils/static/icons/gear-wide-connected.svg
 unoletutils/static/icons/gear-wide.svg
 unoletutils/static/icons/gear.svg
 unoletutils/static/icons/gem.svg
+unoletutils/static/icons/gender-ambiguous.svg
+unoletutils/static/icons/gender-female.svg
+unoletutils/static/icons/gender-male.svg
+unoletutils/static/icons/gender-trans.svg
 unoletutils/static/icons/geo-alt-fill.svg
 unoletutils/static/icons/geo-alt.svg
 unoletutils/static/icons/geo-fill.svg
@@ -827,6 +851,7 @@ unoletutils/static/icons/hdd-stack-fill.svg
 unoletutils/static/icons/hdd-stack.svg
 unoletutils/static/icons/hdd.svg
 unoletutils/static/icons/headphones.svg
+unoletutils/static/icons/headset-vr.svg
 unoletutils/static/icons/headset.svg
 unoletutils/static/icons/heart-fill.svg
 unoletutils/static/icons/heart-half.svg
@@ -858,6 +883,7 @@ unoletutils/static/icons/inboxes.svg
 unoletutils/static/icons/index.html
 unoletutils/static/icons/info-circle-fill.svg
 unoletutils/static/icons/info-circle.svg
+unoletutils/static/icons/info-lg.svg
 unoletutils/static/icons/info-square-fill.svg
 unoletutils/static/icons/info-square.svg
 unoletutils/static/icons/info.svg
@@ -939,6 +965,7 @@ unoletutils/static/icons/map.svg
 unoletutils/static/icons/markdown-fill.svg
 unoletutils/static/icons/markdown.svg
 unoletutils/static/icons/mask.svg
+unoletutils/static/icons/mastodon.svg
 unoletutils/static/icons/megaphone-fill.svg
 unoletutils/static/icons/megaphone.svg
 unoletutils/static/icons/menu-app-fill.svg
@@ -949,6 +976,7 @@ unoletutils/static/icons/menu-button-wide.svg
 unoletutils/static/icons/menu-button.svg
 unoletutils/static/icons/menu-down.svg
 unoletutils/static/icons/menu-up.svg
+unoletutils/static/icons/messenger.svg
 unoletutils/static/icons/mic-fill.svg
 unoletutils/static/icons/mic-mute-fill.svg
 unoletutils/static/icons/mic-mute.svg
@@ -1042,9 +1070,13 @@ unoletutils/static/icons/phone-vibrate.svg
 unoletutils/static/icons/phone.svg
 unoletutils/static/icons/pie-chart-fill.svg
 unoletutils/static/icons/pie-chart.svg
+unoletutils/static/icons/piggy-bank-fill.svg
+unoletutils/static/icons/piggy-bank.svg
 unoletutils/static/icons/pin-angle-fill.svg
 unoletutils/static/icons/pin-angle.svg
 unoletutils/static/icons/pin-fill.svg
+unoletutils/static/icons/pin-map-fill.svg
+unoletutils/static/icons/pin-map.svg
 unoletutils/static/icons/pin.svg
 unoletutils/static/icons/pip-fill.svg
 unoletutils/static/icons/pip.svg
@@ -1059,6 +1091,7 @@ unoletutils/static/icons/plug.svg
 unoletutils/static/icons/plus-circle-dotted.svg
 unoletutils/static/icons/plus-circle-fill.svg
 unoletutils/static/icons/plus-circle.svg
+unoletutils/static/icons/plus-lg.svg
 unoletutils/static/icons/plus-square-dotted.svg
 unoletutils/static/icons/plus-square-fill.svg
 unoletutils/static/icons/plus-square.svg
@@ -1072,6 +1105,7 @@ unoletutils/static/icons/question-circle-fill.svg
 unoletutils/static/icons/question-circle.svg
 unoletutils/static/icons/question-diamond-fill.svg
 unoletutils/static/icons/question-diamond.svg
+unoletutils/static/icons/question-lg.svg
 unoletutils/static/icons/question-octagon-fill.svg
 unoletutils/static/icons/question-octagon.svg
 unoletutils/static/icons/question-square-fill.svg
@@ -1093,6 +1127,8 @@ unoletutils/static/icons/record-fill.svg
 unoletutils/static/icons/record.svg
 unoletutils/static/icons/record2-fill.svg
 unoletutils/static/icons/record2.svg
+unoletutils/static/icons/recycle.svg
+unoletutils/static/icons/reddit.svg
 unoletutils/static/icons/reply-all-fill.svg
 unoletutils/static/icons/reply-all.svg
 unoletutils/static/icons/reply-fill.svg
@@ -1100,12 +1136,18 @@ unoletutils/static/icons/reply.svg
 unoletutils/static/icons/rss-fill.svg
 unoletutils/static/icons/rss.svg
 unoletutils/static/icons/rulers.svg
+unoletutils/static/icons/safe-fill.svg
+unoletutils/static/icons/safe.svg
+unoletutils/static/icons/safe2-fill.svg
+unoletutils/static/icons/safe2.svg
 unoletutils/static/icons/save-fill.svg
 unoletutils/static/icons/save.svg
 unoletutils/static/icons/save2-fill.svg
 unoletutils/static/icons/save2.svg
 unoletutils/static/icons/scissors.svg
 unoletutils/static/icons/screwdriver.svg
+unoletutils/static/icons/sd-card-fill.svg
+unoletutils/static/icons/sd-card.svg
 unoletutils/static/icons/search.svg
 unoletutils/static/icons/segmented-nav.svg
 unoletutils/static/icons/server.svg
@@ -1165,9 +1207,11 @@ unoletutils/static/icons/skip-start-circle-fill.svg
 unoletutils/static/icons/skip-start-circle.svg
 unoletutils/static/icons/skip-start-fill.svg
 unoletutils/static/icons/skip-start.svg
+unoletutils/static/icons/skype.svg
 unoletutils/static/icons/slack.svg
 unoletutils/static/icons/slash-circle-fill.svg
 unoletutils/static/icons/slash-circle.svg
+unoletutils/static/icons/slash-lg.svg
 unoletutils/static/icons/slash-square-fill.svg
 unoletutils/static/icons/slash-square.svg
 unoletutils/static/icons/slash.svg
@@ -1285,6 +1329,7 @@ unoletutils/static/icons/toggles.svg
 unoletutils/static/icons/toggles2.svg
 unoletutils/static/icons/tools.svg
 unoletutils/static/icons/tornado.svg
+unoletutils/static/icons/translate.svg
 unoletutils/static/icons/trash-fill.svg
 unoletutils/static/icons/trash.svg
 unoletutils/static/icons/trash2-fill.svg
@@ -1358,6 +1403,7 @@ unoletutils/static/icons/x-circle-fill.svg
 unoletutils/static/icons/x-circle.svg
 unoletutils/static/icons/x-diamond-fill.svg
 unoletutils/static/icons/x-diamond.svg
+unoletutils/static/icons/x-lg.svg
 unoletutils/static/icons/x-octagon-fill.svg
 unoletutils/static/icons/x-octagon.svg
 unoletutils/static/icons/x-square-fill.svg

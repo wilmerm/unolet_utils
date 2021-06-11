@@ -1,42 +1,11 @@
 Metadata-Version: 1.1
 Name: django-unoletutils
-Version: 0.1
-Summary: Una app Django con utilidades para el proyecto.
+Version: 1.3
+Summary: Django app with utils for Unolet
 Home-page: http://www.unolet.com/development/unoletutils/
-Author: UNOLET
-Author-email: soporte@unolet.com
+Author: Wilmer Martinez
+Author-email: wilmermorelmartinez@gmail.com
 License: BSD License
-Description: =====
-        Unolet Utils
-        =====
-        
-        Unolet Utils es una aplicación Django con módulos, funciones, objetos, etc. 
-        útiles para cualquier proyecto con Django.
-        
-        La documentación detallada se encuentra en el directorio "docs".
-        
-        Inicio rápido
-        -----------
-        
-        1. Agregue "unoletutils" a su configuración INSTALLED_APPS de esta manera:
-        
-             INSTALLED_APPS = (
-                 ...
-                 'unoletutils',
-             )
-        
-        2. Incluya la URLconf de unoletutils en su proyecto urls.py así:
-        
-             url (r'^unoletutils/', include('unoletutils.urls')),
-        
-        3. Ejecute `python manage.py migrate` para crear los modelos de unoletutils.
-        
+Download-URL: https://github.com/wilmerm/unoletutils.git
+Description: Django app with utils for Unolet. See more: https://www.unolet.com/development/unoletutils/
 Platform: UNKNOWN
-Classifier: Environment :: Web Environment
-Classifier: Framework :: Django
-Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved :: BSD License
-Classifier: Operating System :: OS Independent
-Classifier: Programming Language :: Python
-Classifier: Programming Language :: Python :: 3
-Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content

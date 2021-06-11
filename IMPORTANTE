@@ -1,0 +1,24 @@
+Nota para el desarrollador:
+
+
+- Debe existir un archivo con el nombre .pypirc en el directorio raiz del usuario: ~/.pypirc
+con el siguiente contenido:
+
+--------------------------------------------------------------------------------
+[distutils]
+index-servers =
+    pypi
+
+[pypi]
+username = __token__
+password = pypi-AgEIcHlwaS5vcmcCJGQ4NzkzMzYwLTc1YjItNDQ1YS04M2UwLTVmYTU3YWUwMzI4MgACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgeBGMi94qYvl5h1cOJwuSutJrd-4GCIE7EiXSmCA5RSI
+--------------------------------------------------------------------------------
+
+
+- Empaquetar:
+python setup.py sdist
+Esto creará la carpeta 'dist' en el directorio del proyecto, con el paquete tar.gz.
+
+
+- Cargar al repositorio pypi:
+python -m twine upload --repository pypi dist/*
