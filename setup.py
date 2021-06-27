@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name = 'django-unoletutils',
-    version = '1.5',
+    version = '1.5.1',
     packages = ['unoletutils'],
     include_package_data=True,
     license = 'BSD License',  # example license

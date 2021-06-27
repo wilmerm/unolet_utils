@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: django-unoletutils
-Version: 1.5
+Version: 1.5.1
 Summary: Django app with utils for Unolet
 Home-page: http://www.unolet.com/development/unoletutils/
 Author: Wilmer Martinez

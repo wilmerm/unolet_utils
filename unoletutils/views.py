@@ -15,15 +15,13 @@ from django.contrib import messages
 
 try:
     from weasyprint import HTML as weasyprintHTML
+    from weasyprint.fonts import FontConfiguration as weasyprintFontConfiguration
 except (ImportError) as e:
     warnings.warn(f"Es necesario el paquete 'weasyprint' para poder imprimir en PDF. {e}.")
 except (OSError) as e:
     warnings.warn(str(e) + ". Por lo general este error se presenta en Windows por falta de la librería 'cairo'.")
-
-try:
-    from weasyprint.fonts import FontConfiguration as weasyprintFontConfiguration
-except (ImportError) as e:
-    warnings.warn(f"Es necesario el paquete 'weasyprint' para poder imprimir en PDF. {e}.")
+except (BaseException) as e:
+    warnings.warn(str(e))
 
 
 
