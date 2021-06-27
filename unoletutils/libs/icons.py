@@ -85,7 +85,7 @@ def svg(name: str, size: str=None, fill: str=None, id: str=None,
         fill (str): CSS color que se pasará a la opción fill para pintar la 
         imagen.
     """
-    fill = fill or 'var(--secondary)'
+    fill = fill or 'currentColor'
 
     try:
         svg = get_data(name, override=False)["data"]
