@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: django-unoletutils
+Version: 1.5.2
+Summary: Django app with utils for Unolet
+Home-page: http://www.unolet.com/development/#django-unoletutils
+Author: Wilmer Martinez
+Author-email: wilmermorelmartinez@gmail.com
+License: BSD-3-Clause
+Download-URL: https://github.com/wilmerm/django-unoletutils.git
+Description: # django-unoletutils
+        
+        Django responses in json format, and more.
+        
+        
+        ## Requirements
+        
+        Python 3.6 or newer with Django >= 2.2 or newer.
+        
+        
+        ## Installation
+        
+        1. Install using pip:
+        
+            ```bash
+            pip install django-unoletutils
+            ```
+            
+        2. Add to `INSTALLED_APPS` in your `settings.py`:
+        
+           ```python
+           INSTALLED_APPS = (
+               # ...
+               "unoletutils",
+               # ...
+           )
+           ```
+        3. Use views:
+           
+           ```python
+           from unoletutils.libs import utils
+           ```
+           
+        ## Bugs and suggestions
+        
+        If you have found a bug or if you have a request for additional functionality, please use the issue tracker on GitHub.
+        
+        https://github.com/wilmerm/django-unoletutils/issues
+        
+        
+        ## Author
+        
+        Developed and maintained by [Unolet](https://www.unolet.com).
+        
+        Original author: [Wilmer Martinez](https://github.com/wilmerm).
+        
+        Thanks to everybody that has contributed pull requests, ideas, issues, comments and kind words.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
