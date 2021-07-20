@@ -13,11 +13,11 @@ try:
     import barcode
     from barcode.writer import SVGWriter, ImageWriter
 except (ImportError) as e:
-    warnings.warn(e)
+    pass #warnings.warn(e)
 try:
     from django.contrib.sites.models import Site
 except (ImportError, RuntimeError) as e:
-    warnings.warn(e)
+    pass #warnings.warn(e)
 
 from . import text, json, icons
 

@@ -13,7 +13,7 @@ README = (HERE / "README.md").read_text()
 setup(
     name="django-unoletutils",
     zip_safe=False,
-    version="1.5.2",
+    version="1.5.3",
     description="Django app with utils for Unolet",
     long_description=README,
     long_description_content_type="text/markdown",

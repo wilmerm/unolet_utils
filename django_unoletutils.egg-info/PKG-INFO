@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: django-unoletutils
-Version: 1.5.2
+Version: 1.5.3
 Summary: Django app with utils for Unolet
 Home-page: http://www.unolet.com/development/#django-unoletutils
 Author: Wilmer Martinez
@@ -9,7 +9,7 @@ License: BSD-3-Clause
 Download-URL: https://github.com/wilmerm/django-unoletutils.git
 Description: # django-unoletutils
         
-        Django responses in json format, and more.
+        Django app with utils for Unolet.
         
         
         ## Requirements
